@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@0,300;0,400;1,700&family=Nunito:wght@300;400;500;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Watch</title>
+</head>
+<body>
+    <div class="nota">
+        <h2>Nota: Usa las fechas del teclado para mover a los lados</h2>
+    </div>
+    
+    <div class="container-watch">
+        
+    <div class="container">
+        <div class="face front">
+            <h1>Watch</h1>
+            <div id="watch"></div>
+        </div>
+
+        <div class="face back">
+            
+            <div id="chrono">
+                <h2 class="timer-h1">Ingresa un tiempo</h2>
+                <img src="/img/flecha-hacia-la-izquierda.png" alt="">
+            </div>
+        </div>
+
+        <div class="face right">
+            <h2>Chronometer</h2>
+            <div class="container-chronometer">
+
+                <label for="hour">Hora:</label>
+                <input type="number" id="hour" min="0" max="23" placeholder="0" required>
+                <br>
+                <label for="minute">Minutos:</label>
+                <input type="number" id="minute" min="0" max="59" placeholder="0" required>
+                <br>
+                <label for="second">Segundos:</label>
+                <input type="number" id="second" min="0" max="59" placeholder="0" required>
+                <button id="startBtn" onclick="startChrono()">Empezar</button>
+                <p class="error"></p>
+                
+            </div>
+        </div>
+        
+        <div class="face left">
+            <h2> Timer </h2>
+            <div class="container-timer"> 
+                <div id="timer">00 : 00 : 00 : 00</div>
+            </div>
+            <div class="container-buttons">
+                <button id="start" onclick="start()">Start</button>
+                <button id="pause" onclick="pause()">Pause</button>
+                <button id="stop" onclick="stop()">Stop</button>
+            </div>
+        </div>
+      <br><br>
+      
+</body>
+<script src="/js/main.js"></script>
+</html>
