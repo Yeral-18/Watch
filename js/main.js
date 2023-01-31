@@ -132,7 +132,7 @@ function chrono(){
         } else if (selectedSecond === 0 && selectedMinute === 0 && selectedHour === 0) { //Si todos los datos estan en 0 se termina la funcion
                     clearInterval(intervalChrono); //Usando el clearInterval
                     chronoDiv.innerHTML = "¡Finished!"; //Muestra en el DOM que se ha finalizado
-                    let audio = new Audio("/audio/tono-timer.mp3"); //Suena una corta alarma notificando que ta termino
+                    let audio = new Audio("audio/tono-timer.mp3"); //Suena una corta alarma notificando que ta termino
                     audio.play();
                     return;
         }

@@ -89,10 +89,12 @@ body{
 .container-chronometer{
     width: 90%;
     text-align: center;
+    margin: 20px;
+    
 }
 
 #startBtn{
-    margin: 50px;
+    margin: 40px;
     background-color: #120012;
     color: #fff;
     padding: 12px;
